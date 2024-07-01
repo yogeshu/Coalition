@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import BloodPressureChart from '../BloodPressureChart/BloodPressureChart';
+import Vitals from '../Vitals/Vitals';
+import DiagnosticList from '../DiagnosticList/DiagnosticList';
+import LabResults from '../LabResults/LabResults';
+import styles from './MainContent.module.css';
 
-function MainContent() {
+const MainContent = () => {
   return (
-    <div>MainContent</div>
-  )
-}
+    <div className={styles.mainContent}>
+      <BloodPressureChart />
+      <Vitals />
+      <DiagnosticList />
+      <LabResults />
+    </div>
+  );
+};
 
-export default MainContent
+export default MainContent;

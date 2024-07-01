@@ -1,0 +1,32 @@
+.diagnosticList {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  @media (max-width: 768px) {
+    .diagnosticList {
+      padding: 10px;
+    }
+  
+    th, td {
+      padding: 5px;
+    }
+  }
+  

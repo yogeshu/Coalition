@@ -1,0 +1,23 @@
+.chart {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chartContent {
+    height: 200px;
+    background-color: #f0f0f0;
+  }
+  
+  @media (max-width: 768px) {
+    .chart {
+      padding: 10px;
+    }
+  
+    .chartContent {
+      height: 150px;
+    }
+  }
+  
