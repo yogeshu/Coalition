@@ -1,0 +1,38 @@
+.searchBar {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.searchInput {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.searchInputHidden{
+  display: none;
+
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.titleHidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .searchBar {
+    margin-bottom: 5px;
+  }
+}

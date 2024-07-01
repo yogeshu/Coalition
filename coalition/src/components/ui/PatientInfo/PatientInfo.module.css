@@ -1,30 +1,102 @@
 .patientInfo {
-    width: 250px;
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .patientImage {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-  }
-  
-  .showInfoButton {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #00d1b2;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-    .patientInfo {
-      width: 100%;
-      margin-top: 20px;
-    }
-  }
-  
+  width: 320px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.patientImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.patientName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: #888;
+}
+
+.infoItem p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.showInfoButton {
+  background-color: #00ffd2;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.showInfoButton:hover {
+  background-color: #00e6bd;
+}.container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: flex-start;
+}
+.container {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.icon {
+  color: #666;
+  margin-right: 10px;
+  width: 42px;
+  height: 42px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.date {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
