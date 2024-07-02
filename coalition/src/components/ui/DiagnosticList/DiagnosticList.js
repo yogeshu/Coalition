@@ -19,7 +19,18 @@ const DiagnosticList = () => {
             <td>Chronic high blood pressure</td>
             <td>Under Observation</td>
           </tr>
-          {/* Add more rows here */}
+          <tr>
+            <td>Diabetes</td>
+            <td>Insulin resistance and elevated blood sugar</td>
+            <td>Cured</td>
+
+          </tr>
+
+          <tr>
+            <td>Asthma</td>
+            <td>Recurrent episodes of bronchial constriction</td>
+            <td>Inactive</td>
+          </tr>
         </tbody>
       </table>
     </div>

@@ -3,12 +3,20 @@
     background-color: #f8f8f8;
     padding: 20px;
     overflow-y: auto;
+    height: 1054px;
     background-color: #fff;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .sidebar ::-webkit-scrollbar {
+    width: 5px;
+  }
+  .sidebar ::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
   }
   
   @media (max-width: 768px) {

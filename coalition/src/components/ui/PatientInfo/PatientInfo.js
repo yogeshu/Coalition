@@ -5,9 +5,11 @@ import BirthIcon from "../../../assets/icons/BirthIcon.png";
 import FemaleIcon from "../../../assets/icons/FemaleIcon.png";
 import PhoneIcon from "../../../assets/icons/PhoneIcon.png";
 import InsuranceIcon from "../../../assets/icons/InsuranceIcon.png";
+import LabResults from "../LabResults/LabResults";
 
 const PatientInfo = () => {
   return (
+  <div className={styles.patientInfoContainer}>
     <div className={styles.patientInfo}>
       <img src={profile} alt="Patient" className={styles.patientImage} />
       <h3 className={styles.patientName}>Jessica Taylor</h3>
@@ -49,6 +51,8 @@ const PatientInfo = () => {
       <button className={styles.showInfoButton}>Show All Information</button>
       </div>
 
+    </div>
+    <LabResults/>
     </div>
   );
 };
