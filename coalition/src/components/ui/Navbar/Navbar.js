@@ -25,25 +25,25 @@ const Navbar = () => {
       </div>
       <div className={`${styles.navLinks} ${isNavOpen ? styles.show : ""}`}>
         <a href="#overview" className={styles.navLink}>
-          <img src={overview} alt="overview" /> <span className={styles.navlinkSpan}>  Overview </span> 
+          <img src={overview} alt="overview" />{" "}
+          <span className={styles.navlinkSpan}> Overview </span>
         </a>
         <a href="#patients" className={`${styles.navLink} ${styles.active}`}>
           {" "}
           <img src={patients} alt="Patients" />
-          <span className={styles.navlinkSpan}>  Patients </span>
+          <span className={styles.navlinkSpan}> Patients </span>
         </a>
         <a href="#schedule" className={styles.navLink}>
           <img src={schedule} alt="Schedule" />
-                    <span className={styles.navlinkSpan}>  Schedule </span>
-
+          <span className={styles.navlinkSpan}> Schedule </span>
         </a>
         <a href="#message" className={styles.navLink}>
           <img src={chatbubble} alt="Message" />
-            <span className={styles.navlinkSpan}>  Message </span>
+          <span className={styles.navlinkSpan}> Message </span>
         </a>
         <a href="#transactions" className={styles.navLink}>
           <img src={creditcard} alt="Transactions" />
-       <span className={styles.navlinkSpan}>  Transactions </span>
+          <span className={styles.navlinkSpan}> Transactions </span>
         </a>
       </div>
       <div className={styles.userProfile}>
@@ -63,8 +63,23 @@ const Navbar = () => {
           <img src={kebab} alt="settings" />{" "}
         </div>
 
-        <div className={styles.burgerMenu} onClick={toggleNav}>
+        <div
+          className={styles.burgerMenu}
+          onClick={toggleNav}
+          style={{
+            display: isNavOpen ? "none" : "block",
+          }}
+        >
           ☰
+        </div>
+        <div
+          className={styles.closeMenu}
+          onClick={toggleNav}
+          style={{
+            display: isNavOpen ? "block" : "none",
+          }}
+        >
+          X
         </div>
       </div>
     </nav>

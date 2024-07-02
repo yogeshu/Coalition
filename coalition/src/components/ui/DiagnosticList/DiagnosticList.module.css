@@ -10,8 +10,16 @@
     margin-top: 2.5rem;
     width: 100%;
     border-collapse: collapse;
+    height: 250px;
+    overflow-y: auto;
+    display: block;
+    max-height: 200px; /* Adjust height as needed */
+    overflow-y: auto;
   }
-  
+  .tableContainer{
+    overflow-y: auto;
+    height: 250px;
+  }
   th, td {
     padding: 21px 16px; 
     text-align: left;
@@ -40,4 +48,5 @@
       padding: 5px;
     }
   }
+  
   

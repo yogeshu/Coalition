@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './DiagnosticList.module.css';
+import React from "react";
+import styles from "./DiagnosticList.module.css";
 
-const DiagnosticList = () => {
+const DiagnosticList = ({ getProfileData }) => {
   return (
     <div className={styles.diagnosticList}>
       <h2>Diagnostic List</h2>
@@ -14,17 +14,15 @@ const DiagnosticList = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Hypertension</td>
-            <td>Chronic high blood pressure</td>
-            <td>Under Observation</td>
-          </tr>
-          <tr>
-            <td>Diabetes</td>
-            <td>Insulin resistance and elevated blood sugar</td>
-            <td>Cured</td>
-
-          </tr>
+          {getProfileData[0]?.diagnostic_list.map((item, index) => {
+            return (
+              <tr key={index} className={styles.setLimit}>
+                <td>{item.name}</td>
+                <td>{item.description}</td>
+                <td>{item.status}</td>
+              </tr>
+            );
+          })}
 
           <tr>
             <td>Asthma</td>

@@ -29,7 +29,9 @@
     font-size: 16px;
     cursor: pointer;
   }
-  
+  .selected{
+    background-color: #D8FCF7;
+  }
   @media (max-width: 768px) {
     .patientItem {
       padding: 5px;
